@@ -1,0 +1,4 @@
+
+## command
+
+`gradle flywayMigrate -i`
