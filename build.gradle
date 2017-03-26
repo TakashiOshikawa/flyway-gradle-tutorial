@@ -1,0 +1,15 @@
+buildscript {
+    dependencies {
+        classpath 'com.h2database:h2:1.4.191'
+        classpath 'mysql:mysql-connector-java:5.1.6'
+    }
+}
+
+plugins {
+    id "org.flywaydb.flyway" version "4.1.2"
+}
+
+flyway {
+    url = 'jdbc:mysql://localhost/flyway?user=root&password='
+    user = 'root'
+}
